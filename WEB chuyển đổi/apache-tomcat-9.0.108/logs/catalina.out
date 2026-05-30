@@ -1,0 +1,401 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 02:12:44.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-May-2026 02:12:44.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-May-2026 02:12:44.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-May-2026 02:12:44.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+30-May-2026 02:12:44.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1052-azure
+30-May-2026 02:12:44.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2026 02:12:44.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.2-ms
+30-May-2026 02:12:44.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS
+30-May-2026 02:12:44.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+30-May-2026 02:12:44.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 02:12:44.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 02:12:44.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2026 02:12:44.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/conf/logging.properties
+30-May-2026 02:12:44.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2026 02:12:44.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2026 02:12:44.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2026 02:12:44.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-May-2026 02:12:44.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-May-2026 02:12:44.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2026 02:12:44.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 02:12:44.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 02:12:44.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/workspaces/Cuoi_ki/WEB%20chuyển%20đổi/apache-tomcat-9.0.108/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+30-May-2026 02:12:44.659 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+30-May-2026 02:12:45.429 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2026 02:12:45.454 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1144] milliseconds
+30-May-2026 02:12:45.500 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2026 02:12:45.501 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-May-2026 02:12:45.517 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+30-May-2026 02:12:45.783 SEVERE [main] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:602)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1013)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1861)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:76)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:125)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:817)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:468)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:76)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:412)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:739)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/webchuyendoi-1.0]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:406)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The servlets named [ConvertServlet] and [controller.ConvertServlet] are both mapped to the url-pattern [/convert] which is not permitted
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMappingDecoded(WebXml.java:415)
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:406)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationWebServlet(ContextConfig.java:2555)
+		at org.apache.catalina.startup.ContextConfig.processClass(ContextConfig.java:2261)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2250)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource(ContextConfig.java:2161)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource(ContextConfig.java:2156)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1361)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1271)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:972)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4407)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 36 more
+30-May-2026 02:12:45.791 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war] has finished in [271] ms
+30-May-2026 02:12:45.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT]
+30-May-2026 02:12:45.973 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT] has finished in [179] ms
+30-May-2026 02:12:45.975 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager]
+30-May-2026 02:12:46.052 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager] has finished in [77] ms
+30-May-2026 02:12:46.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples]
+30-May-2026 02:12:46.530 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples] has finished in [477] ms
+30-May-2026 02:12:46.530 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs]
+30-May-2026 02:12:46.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs] has finished in [21] ms
+30-May-2026 02:12:46.552 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager]
+30-May-2026 02:12:46.591 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager] has finished in [39] ms
+30-May-2026 02:12:46.595 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2026 02:12:46.613 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1156] milliseconds
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:01:59.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-May-2026 03:01:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-May-2026 03:01:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-May-2026 03:01:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+30-May-2026 03:01:59.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1052-azure
+30-May-2026 03:01:59.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2026 03:01:59.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.2-ms
+30-May-2026 03:01:59.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS
+30-May-2026 03:01:59.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+30-May-2026 03:01:59.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:01:59.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:01:59.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2026 03:01:59.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-May-2026 03:01:59.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-May-2026 03:01:59.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2026 03:01:59.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-May-2026 03:01:59.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-May-2026 03:01:59.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:01:59.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/conf/logging.properties
+30-May-2026 03:01:59.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2026 03:01:59.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2026 03:01:59.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2026 03:01:59.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-May-2026 03:01:59.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-May-2026 03:01:59.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2026 03:01:59.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:01:59.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:01:59.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/workspaces/Cuoi_ki/WEB%20chuyển%20đổi/apache-tomcat-9.0.108/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+30-May-2026 03:01:59.090 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+30-May-2026 03:01:59.572 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:01:59.613 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1191] milliseconds
+30-May-2026 03:01:59.657 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2026 03:01:59.658 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-May-2026 03:01:59.674 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+30-May-2026 03:02:00.063 SEVERE [main] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:602)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1013)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1861)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:76)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:125)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:817)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:468)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:76)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:412)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:739)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/webchuyendoi-1.0]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:406)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The servlets named [ConvertServlet] and [controller.ConvertServlet] are both mapped to the url-pattern [/convert] which is not permitted
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMappingDecoded(WebXml.java:415)
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:406)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationWebServlet(ContextConfig.java:2555)
+		at org.apache.catalina.startup.ContextConfig.processClass(ContextConfig.java:2261)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2250)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource(ContextConfig.java:2161)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsWebResource(ContextConfig.java:2156)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1361)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1271)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:972)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4407)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 36 more
+30-May-2026 03:02:00.075 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war] has finished in [395] ms
+30-May-2026 03:02:00.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT]
+30-May-2026 03:02:00.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT] has finished in [304] ms
+30-May-2026 03:02:00.382 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager]
+30-May-2026 03:02:00.440 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager] has finished in [58] ms
+30-May-2026 03:02:00.440 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples]
+30-May-2026 03:02:01.091 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples] has finished in [651] ms
+30-May-2026 03:02:01.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs]
+30-May-2026 03:02:01.127 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs] has finished in [34] ms
+30-May-2026 03:02:01.128 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager]
+30-May-2026 03:02:01.173 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager] has finished in [45] ms
+30-May-2026 03:02:01.178 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:02:01.192 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1577] milliseconds
+30-May-2026 03:10:41.342 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/webchuyendoi-1.0]
+30-May-2026 03:10:51.358 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+30-May-2026 03:10:51.427 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war] has finished in [69] ms
+30-May-2026 03:10:51.990 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-May-2026 03:10:51.992 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:10:51.999 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-May-2026 03:10:52.039 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:10:52.045 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:10:52.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-May-2026 03:10:52.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-May-2026 03:10:52.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-May-2026 03:10:52.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+30-May-2026 03:10:52.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1052-azure
+30-May-2026 03:10:52.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2026 03:10:52.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.2-ms
+30-May-2026 03:10:52.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS
+30-May-2026 03:10:52.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+30-May-2026 03:10:52.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:10:52.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:10:52.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2026 03:10:52.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-May-2026 03:10:52.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-May-2026 03:10:52.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2026 03:10:52.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-May-2026 03:10:52.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-May-2026 03:10:52.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:10:52.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/conf/logging.properties
+30-May-2026 03:10:52.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:10:52.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/workspaces/Cuoi_ki/WEB%20chuyển%20đổi/apache-tomcat-9.0.108/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+30-May-2026 03:10:52.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+30-May-2026 03:10:53.301 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:10:53.346 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [878] milliseconds
+30-May-2026 03:10:53.390 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2026 03:10:53.391 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-May-2026 03:10:53.408 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+30-May-2026 03:10:53.984 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war] has finished in [574] ms
+30-May-2026 03:10:53.985 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT]
+30-May-2026 03:10:54.021 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT] has finished in [35] ms
+30-May-2026 03:10:54.021 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager]
+30-May-2026 03:10:54.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager] has finished in [68] ms
+30-May-2026 03:10:54.091 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples]
+30-May-2026 03:10:54.437 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples] has finished in [346] ms
+30-May-2026 03:10:54.438 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs]
+30-May-2026 03:10:54.459 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs] has finished in [21] ms
+30-May-2026 03:10:54.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager]
+30-May-2026 03:10:54.493 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager] has finished in [33] ms
+30-May-2026 03:10:54.497 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:10:54.512 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1162] milliseconds
+30-May-2026 03:20:10.992 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-May-2026 03:20:10.993 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:20:11.006 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-May-2026 03:20:11.155 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:20:11.165 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:20:57.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-May-2026 03:20:57.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-May-2026 03:20:57.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-May-2026 03:20:57.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+30-May-2026 03:20:57.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1052-azure
+30-May-2026 03:20:57.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2026 03:20:57.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.2-ms
+30-May-2026 03:20:57.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS
+30-May-2026 03:20:57.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+30-May-2026 03:20:57.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:20:57.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:20:57.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2026 03:20:57.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-May-2026 03:20:57.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-May-2026 03:20:57.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2026 03:20:57.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-May-2026 03:20:57.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-May-2026 03:20:57.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:20:57.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/conf/logging.properties
+30-May-2026 03:20:57.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:20:57.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/workspaces/Cuoi_ki/WEB%20chuyển%20đổi/apache-tomcat-9.0.108/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+30-May-2026 03:20:57.068 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+30-May-2026 03:20:57.585 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:20:57.629 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [812] milliseconds
+30-May-2026 03:20:57.707 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2026 03:20:57.707 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-May-2026 03:20:57.731 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+30-May-2026 03:20:58.446 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war] has finished in [712] ms
+30-May-2026 03:20:58.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT]
+30-May-2026 03:20:58.488 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT] has finished in [41] ms
+30-May-2026 03:20:58.490 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager]
+30-May-2026 03:20:58.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager] has finished in [70] ms
+30-May-2026 03:20:58.562 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples]
+30-May-2026 03:20:58.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples] has finished in [312] ms
+30-May-2026 03:20:58.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs]
+30-May-2026 03:20:58.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs] has finished in [30] ms
+30-May-2026 03:20:58.906 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager]
+30-May-2026 03:20:58.951 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager] has finished in [45] ms
+30-May-2026 03:20:58.957 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:20:58.988 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1353] milliseconds
+30-May-2026 03:26:10.879 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-May-2026 03:26:10.880 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:26:10.890 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-May-2026 03:26:10.972 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:26:10.979 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:26:53.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-May-2026 03:26:53.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-May-2026 03:26:53.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-May-2026 03:26:53.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+30-May-2026 03:26:53.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1052-azure
+30-May-2026 03:26:53.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2026 03:26:53.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.2-ms
+30-May-2026 03:26:53.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS
+30-May-2026 03:26:53.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+30-May-2026 03:26:53.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:26:53.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:26:53.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2026 03:26:53.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-May-2026 03:26:53.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-May-2026 03:26:53.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2026 03:26:53.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-May-2026 03:26:53.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-May-2026 03:26:53.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 03:26:53.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/conf/logging.properties
+30-May-2026 03:26:53.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2026 03:26:53.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2026 03:26:53.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2026 03:26:53.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-May-2026 03:26:53.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-May-2026 03:26:53.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2026 03:26:53.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:26:53.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108
+30-May-2026 03:26:53.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/workspaces/Cuoi_ki/WEB%20chuyển%20đổi/apache-tomcat-9.0.108/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+30-May-2026 03:26:53.624 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+30-May-2026 03:26:54.448 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:26:54.479 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1135] milliseconds
+30-May-2026 03:26:54.534 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2026 03:26:54.534 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-May-2026 03:26:54.558 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT.war]
+30-May-2026 03:26:54.899 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/ROOT.war] has finished in [338] ms
+30-May-2026 03:26:54.900 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war]
+30-May-2026 03:26:54.942 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/webchuyendoi-1.0.war] has finished in [42] ms
+30-May-2026 03:26:54.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager]
+30-May-2026 03:26:54.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/host-manager] has finished in [39] ms
+30-May-2026 03:26:54.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples]
+30-May-2026 03:26:55.314 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/examples] has finished in [330] ms
+30-May-2026 03:26:55.314 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs]
+30-May-2026 03:26:55.352 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/docs] has finished in [38] ms
+30-May-2026 03:26:55.352 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager]
+30-May-2026 03:26:55.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager] has finished in [36] ms
+30-May-2026 03:26:55.393 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:26:55.405 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [921] milliseconds
