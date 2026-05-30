@@ -1,49 +1,92 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Chương trình chuyển đổi</title>
+
+    <title>Website Chuyển Đổi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
 </head>
-<body>
 
-<h2>CHƯƠNG TRÌNH CHUYỂN ĐỔI</h2>
+<body style="background:#f5f7fa;">
 
-<form action="convert" method="post">
+<div class="container mt-5">
 
-    <label>Chọn chức năng:</label>
-    <select name="type">
-        <option value="km">Km → Miles</option>
-        <option value="temp">°C → °F</option>
-        <option value="usd">USD → VND</option>
-        <option value="gold">Tính giá vàng</option>
-    </select>
+    <div class="card shadow">
 
-    <br><br>
+        <div class="card-header bg-primary text-white">
 
-    <label>Nhập giá trị:</label>
-    <input type="number" step="any" name="value" required>
+            <h2>🔄 Hệ Thống Chuyển Đổi Đơn Vị</h2>
 
-    <br><br>
+        </div>
 
-    <button type="submit">Chuyển đổi</button>
+        <div class="card-body">
 
-</form>
+            <form action="convert" method="post">
 
-<hr>
+                <div class="mb-3">
 
-<%
-String result = (String) request.getAttribute("result");
+                    <label>Nhập giá trị</label>
 
-if(result != null){
-%>
+                    <input
+                            type="number"
+                            step="0.01"
+                            name="value"
+                            class="form-control"
+                            required>
 
-<h3>Kết quả: <%= result %></h3>
+                </div>
 
-<%
-}
-%>
+                <div class="mb-3">
+
+                    <label>Loại chuyển đổi</label>
+
+                    <select name="type" class="form-select">
+
+                        <option value="km">
+                            Km ➜ Miles
+                        </option>
+
+                        <option value="c">
+                            °C ➜ °F
+                        </option>
+
+                        <option value="usd">
+                            USD ➜ VNĐ
+                        </option>
+
+                        <option value="gold">
+                            Vàng ➜ VNĐ
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button class="btn btn-success">
+
+                    Chuyển đổi
+
+                </button>
+
+            </form>
+
+            <hr>
+
+            <h4 class="text-danger">
+
+                ${result}
+
+            </h4>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>

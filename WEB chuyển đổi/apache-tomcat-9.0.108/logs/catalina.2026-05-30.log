@@ -369,3 +369,8 @@
 30-May-2026 03:26:55.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Cuoi_ki/WEB chuyển đổi/apache-tomcat-9.0.108/webapps/manager] has finished in [36] ms
 30-May-2026 03:26:55.393 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 30-May-2026 03:26:55.405 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [921] milliseconds
+30-May-2026 03:43:28.996 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-May-2026 03:43:28.997 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:43:29.013 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-May-2026 03:43:29.062 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:43:29.078 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
