@@ -3,13 +3,16 @@ package controller;
 import dao.DBConnection;
 import model.SanPham;
 
-import javax.servlet.*;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet("/product")
 public class ProductServlet extends HttpServlet {
@@ -18,63 +21,73 @@ public class ProductServlet extends HttpServlet {
     protected void doGet(
             HttpServletRequest request,
             HttpServletResponse response)
-
             throws ServletException, IOException {
 
-        List<SanPham> list =
-                new ArrayList<>();
+        List<SanPham> list = new ArrayList<>();
 
-        String keyword =
-                request.getParameter("keyword");
+        String keyword = request.getParameter("keyword");
 
-        if(keyword == null)
+        if (keyword == null) {
             keyword = "";
+        }
 
-        try {
+        try (
+                Connection con = DBConnection.getConnection();
+                PreparedStatement ps = con.prepareStatement(
+                        "SELECT * FROM SanPham " +
+                        "WHERE TenSP LIKE ? " +
+                        "ORDER BY MaSP DESC"
+                )
+        ) {
 
-            try (Connection con = DBConnection.getConnection()) {
-                PreparedStatement ps =
-                        con.prepareStatement(
-                                
-                                "SELECT * FROM SanPham "
-                                        + "WHERE TenSP LIKE ?"
-                                
-                        );
-                
-                ps.setString(
-                        1,
-                        "%" + keyword + "%"
+            ps.setString(
+                    1,
+                    "%" + keyword + "%"
+            );
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+
+                SanPham sp = new SanPham();
+
+                sp.setMaSP(
+                        rs.getInt("MaSP")
                 );
-                
-                ResultSet rs =
-                        ps.executeQuery();
-                
-                while(rs.next()) {
-                    
-                    SanPham sp =
-                            new SanPham();
-                    
-                    sp.setMaSP(
-                            rs.getInt("MaSP"));
-                    
-                    sp.setTenSP(
-                            rs.getString("TenSP"));
-                    
-                    sp.setGia(
-                            rs.getDouble("Gia"));
-                    
-                    sp.setMoTa(
-                            rs.getString("MoTa"));
-                    
-                    sp.setHinhAnh(
-                            rs.getString("HinhAnh"));
-                    
-                    list.add(sp);
-                }
+
+                sp.setTenSP(
+                        rs.getString("TenSP")
+                );
+
+                sp.setGia(
+                        rs.getDouble("Gia")
+                );
+
+                sp.setMoTa(
+                        rs.getString("MoTa")
+                );
+
+                sp.setHinhAnh(
+                        rs.getString("HinhAnh")
+                );
+
+                list.add(sp);
             }
 
-        } catch(SQLException e) {
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+            request.setAttribute(
+                    "error",
+                    e.getMessage()
+            );
         }
+
+        request.setAttribute(
+                "keyword",
+                keyword
+        );
 
         request.setAttribute(
                 "list",
@@ -82,7 +95,7 @@ public class ProductServlet extends HttpServlet {
         );
 
         request.getRequestDispatcher(
-                "product.jsp"
+                "/product.jsp"
         ).forward(
                 request,
                 response

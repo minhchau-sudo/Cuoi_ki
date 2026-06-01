@@ -1,4 +1,7 @@
 controller/ProductServlet.class
 model/SanPham.class
-dao/DBConnection.class
 controller/ConvertServlet.class
+controller/EditProductServlet.class
+controller/DeleteProductServlet.class
+controller/AddProductServlet.class
+dao/DBConnection.class

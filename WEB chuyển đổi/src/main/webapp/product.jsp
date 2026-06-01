@@ -26,12 +26,19 @@
 <form action="product"
       class="row mb-4">
 
+<div class="mb-3">
+    <a href="addProduct.jsp" class="btn btn-success">
+        ➕ Thêm sản phẩm
+    </a>
+</div>
+
 <div class="col-md-10">
 
 <input
 class="form-control"
 name="keyword"
-placeholder="Tìm sản phẩm">
+value="${keyword}"
+placeholder="Nhập tên sản phẩm...">
 
 </div>
 
