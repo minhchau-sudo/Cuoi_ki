@@ -1,1 +1,4 @@
+controller/ProductServlet.class
+model/SanPham.class
+dao/DBConnection.class
 controller/ConvertServlet.class

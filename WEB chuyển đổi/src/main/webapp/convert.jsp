@@ -1,89 +1,158 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>Website Chuyển Đổi</title>
+    <title>Hệ Thống Chuyển Đổi</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
+    <style>
+
+        body{
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+            min-height:100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-card{
+            margin-top:40px;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0px 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .banner{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .title{
+            text-align:center;
+            color:white;
+            margin-top:20px;
+            font-weight:bold;
+        }
+
+        .result-box{
+            margin-top:20px;
+            background:#e8fff0;
+            border-left:5px solid green;
+            padding:15px;
+            border-radius:10px;
+            font-size:20px;
+            font-weight:bold;
+            color:#008000;
+        }
+
+        .btn-custom{
+            background:#0d6efd;
+            color:white;
+            font-weight:bold;
+        }
+
+        .btn-custom:hover{
+            background:#084298;
+        }
+
+        .footer{
+            text-align:center;
+            color:white;
+            margin-top:20px;
+            padding-bottom:20px;
+        }
+
+    </style>
+
 </head>
 
-<body style="background:#f5f7fa;">
+<body>
 
-<div class="container mt-5">
+<div class="container">
 
-    <div class="card shadow">
+    <h1 class="title">
+        🔄 HỆ THỐNG CHUYỂN ĐỔI ĐA CHỨC NĂNG
+    </h1>
 
-        <div class="card-header bg-primary text-white">
+    <div class="card main-card">
 
-            <h2>🔄 Hệ Thống Chuyển Đổi Đơn Vị</h2>
+        <img
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+        class="banner">
 
-        </div>
-
-        <div class="card-body">
+        <div class="card-body p-4">
 
             <form action="convert" method="post">
 
                 <div class="mb-3">
 
-                    <label>Nhập giá trị</label>
+                    <label class="form-label">
+                        Nhập giá trị
+                    </label>
 
                     <input
-                            type="number"
-                            step="0.01"
-                            name="value"
-                            class="form-control"
-                            required>
+                    type="number"
+                    step="0.01"
+                    name="value"
+                    class="form-control"
+                    required>
 
                 </div>
 
                 <div class="mb-3">
 
-                    <label>Loại chuyển đổi</label>
+                    <label class="form-label">
+                        Chọn loại chuyển đổi
+                    </label>
 
-                    <select name="type" class="form-select">
+                    <select
+                    name="type"
+                    class="form-select">
 
                         <option value="km">
-                            Km ➜ Miles
+                            🚗 Km → Miles
                         </option>
 
-                        <option value="c">
-                            °C ➜ °F
+                        <option value="cf">
+                            🌡️ °C → °F
                         </option>
 
                         <option value="usd">
-                            USD ➜ VNĐ
+                            💵 USD → VNĐ
                         </option>
 
                         <option value="gold">
-                            Vàng ➜ VNĐ
+                            🏆 Chỉ vàng → VNĐ
                         </option>
 
                     </select>
 
                 </div>
 
-                <button class="btn btn-success">
+                <button
+                type="submit"
+                class="btn btn-custom w-100">
 
-                    Chuyển đổi
+                    THỰC HIỆN CHUYỂN ĐỔI
 
                 </button>
 
             </form>
 
-            <hr>
-
-            <h4 class="text-danger">
+            <div class="result-box">
 
                 ${result}
 
-            </h4>
+            </div>
 
         </div>
 
+    </div>
+
+    <div class="footer">
+        © 2026 - Đồ án JSP/Servlet - Hệ thống chuyển đổi đa chức năng
     </div>
 
 </div>
